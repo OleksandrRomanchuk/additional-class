@@ -1,10 +1,18 @@
+//========== helpers ==========
 import PropTypes from 'prop-types';
 
+//========== styles ==========
+import { Btn } from './Button.styled';
+
 export function Button({ text, clickHandler }) {
-    return <button type="button" onClick={clickHandler} >{text}</button>;
+	return (
+		<Btn type="button" onClick={clickHandler}>
+			{text}
+		</Btn>
+	);
 }
 
 Button.propTypes = {
-    text: PropTypes.string.isRequired,
-    clickHandler: PropTypes.func.isRequired,
-}
+	text: PropTypes.string.isRequired,
+	clickHandler: PropTypes.func.isRequired,
+};
