@@ -67,7 +67,7 @@ class Form extends Component {
 							value={email}
 						/>
 					</Label>
-					<Btn type="submit">Submit</Btn>
+					<Btn type="submit">Add user</Btn>
 				</AddForm>
 			</>
 		);
